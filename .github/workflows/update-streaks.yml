@@ -42,7 +42,7 @@ jobs:
           fi
 
           # Generate fresh SVG from historical + recent activity.
-          python3 src/dailystreaks.py \
+          python3 src/daily_streak.py \
             --username "$STREAK_USERNAME" \
             --timezone-offset "${STREAK_TIMEZONE_OFFSET:-0}" \
             --max-pages "${STREAK_MAX_PAGES:-5}" \
